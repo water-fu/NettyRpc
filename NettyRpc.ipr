@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="war" name="NettyRpc:war">
+      <output-path>$PROJECT_DIR$/target</output-path>
+      <root id="archive" name="netty-rpc.war">
+        <element id="artifact" artifact-name="NettyRpc:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="NettyRpc:war exploded">
+      <output-path>$PROJECT_DIR$/target/netty-rpc</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="NettyRpc" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/target/netty-rpc/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="NettyRpc/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="common:war">
+      <output-path>$PROJECT_DIR$/common/target</output-path>
+      <root id="archive" name="common.war">
+        <element id="artifact" artifact-name="common:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="common:war exploded">
+      <output-path>$PROJECT_DIR$/common/target/common</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="common" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/common/target/common/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="common/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="core:war">
+      <output-path>$PROJECT_DIR$/core/target</output-path>
+      <root id="archive" name="core.war">
+        <element id="artifact" artifact-name="core:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="core:war exploded">
+      <output-path>$PROJECT_DIR$/core/target/core</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="core" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/core/target/core/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="core/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="server:war">
+      <output-path>$PROJECT_DIR$/server/target</output-path>
+      <root id="archive" name="server.war">
+        <element id="artifact" artifact-name="server:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="server:war exploded">
+      <output-path>$PROJECT_DIR$/server/target/server</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="server" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/server/target/server/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="server/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="client:war">
+      <output-path>$PROJECT_DIR$/client/target</output-path>
+      <root id="archive" name="client.war">
+        <element id="artifact" artifact-name="client:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="client:war exploded">
+      <output-path>$PROJECT_DIR$/client/target/client</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="client" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/client/target/client/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="client/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="server-demo:war">
+      <output-path>$PROJECT_DIR$/server-demo/target</output-path>
+      <root id="archive" name="server-demo.war">
+        <element id="artifact" artifact-name="server-demo:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="server-demo:war exploded">
+      <output-path>$PROJECT_DIR$/server-demo/target/server-demo</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="server-demo" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/server-demo/target/server-demo/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="server-demo/web/Web" />
+      </root>
+    </artifact>
+    <artifact type="war" name="client-demo:war">
+      <output-path>$PROJECT_DIR$/client-demo/target</output-path>
+      <root id="archive" name="client-demo.war">
+        <element id="artifact" artifact-name="client-demo:war exploded" />
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="client-demo:war exploded">
+      <output-path>$PROJECT_DIR$/client-demo/target/client-demo</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="client-demo" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.7" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+            <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.0" />
+          </element>
+        </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/client-demo/target/client-demo/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="client-demo/web/Web" />
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="client" />
+        <module name="client-demo" />
+        <module name="common" />
+        <module name="core" />
+        <module name="server" />
+        <module name="server-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="client" target="1.7" />
+      <module name="client-demo" target="1.7" />
+      <module name="common" target="1.7" />
+      <module name="core" target="1.7" />
+      <module name="NettyRpc" target="1.7" />
+      <module name="server" target="1.7" />
+      <module name="server-demo" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="Encoding">
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+      <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="ignoreAnonymousInnerClasses" value="false" />
+        <option name="superClassString" value="" />
+      </inspection_tool>
+    </profile>
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_PROFILE" value="true" />
+    <version value="1.0" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NettyRpc.iml" filepath="$PROJECT_DIR$/NettyRpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-demo/client-demo.iml" filepath="$PROJECT_DIR$/client-demo/client-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-demo/server-demo.iml" filepath="$PROJECT_DIR$/server-demo/server-demo.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: aopalliance:aopalliance:1.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: cglib:cglib:3.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/cglib/cglib/3.1/cglib-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/cglib/cglib/3.1/cglib-3.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/cglib/cglib/3.1/cglib-3.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.dyuproject.protostuff:protostuff-api:1.0.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-api/1.0.8/protostuff-api-1.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-api/1.0.8/protostuff-api-1.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-api/1.0.8/protostuff-api-1.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.dyuproject.protostuff:protostuff-collectionschema:1.0.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-collectionschema/1.0.8/protostuff-collectionschema-1.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-collectionschema/1.0.8/protostuff-collectionschema-1.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-collectionschema/1.0.8/protostuff-collectionschema-1.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.dyuproject.protostuff:protostuff-core:1.0.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-core/1.0.8/protostuff-core-1.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-core/1.0.8/protostuff-core-1.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-core/1.0.8/protostuff-core-1.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.dyuproject.protostuff:protostuff-runtime:1.0.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-runtime/1.0.8/protostuff-runtime-1.0.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-runtime/1.0.8/protostuff-runtime-1.0.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/com/dyuproject/protostuff/protostuff-runtime/1.0.8/protostuff-runtime-1.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-logging:commons-logging:1.1.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty-all:4.0.24.Final">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty-all/4.0.24.Final/netty-all-4.0.24.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty-all/4.0.24.Final/netty-all-4.0.24.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty-all/4.0.24.Final/netty-all-4.0.24.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: io.netty:netty:3.7.0.Final">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty/3.7.0.Final/netty-3.7.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/io/netty/netty/3.7.0.Final/netty-3.7.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jline:jline:0.9.94">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/jline/jline/0.9.94/jline-0.9.94.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/jline/jline/0.9.94/jline-0.9.94-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/jline/jline/0.9.94/jline-0.9.94-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:4.12">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/junit/junit/4.12/junit-4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/junit/junit/4.12/junit-4.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/junit/junit/4.12/junit-4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: log4j:log4j:1.2.16">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.16/log4j-1.2.16.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.16/log4j-1.2.16-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: log4j:log4j:1.2.17">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.17/log4j-1.2.17-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.commons:commons-collections4:4.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.zookeeper:zookeeper:3.4.8">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-core:1.3">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.objenesis:objenesis:2.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/objenesis/objenesis/2.1/objenesis-2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/objenesis/objenesis/2.1/objenesis-2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.ow2.asm:asm:4.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/ow2/asm/asm/4.2/asm-4.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/ow2/asm/asm/4.2/asm-4.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/ow2/asm/asm/4.2/asm-4.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.6.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.7.7">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-aop:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-aop/3.2.12.RELEASE/spring-aop-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-aop/3.2.12.RELEASE/spring-aop-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-aop/3.2.12.RELEASE/spring-aop-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-beans:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-beans/3.2.12.RELEASE/spring-beans-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-beans/3.2.12.RELEASE/spring-beans-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-beans/3.2.12.RELEASE/spring-beans-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-context:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-context/3.2.12.RELEASE/spring-context-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-core:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-core/3.2.12.RELEASE/spring-core-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-core/3.2.12.RELEASE/spring-core-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-core/3.2.12.RELEASE/spring-core-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-expression:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-expression/3.2.12.RELEASE/spring-expression-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-expression/3.2.12.RELEASE/spring-expression-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-expression/3.2.12.RELEASE/spring-expression-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-test:3.2.12.RELEASE">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-test/3.2.12.RELEASE/spring-test-3.2.12.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-test/3.2.12.RELEASE/spring-test-3.2.12.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/../../../10.mavenlocal/org/springframework/spring-test/3.2.12.RELEASE/spring-test-3.2.12.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>
